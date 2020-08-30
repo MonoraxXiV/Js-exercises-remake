@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+    var button = document.getElementById("run");
+    button.onclick = function() {
+        function random_bg_color() { //defines the function
+            var x = Math.floor(Math.random() * 256);
+            var y = Math.floor(Math.random() * 256);
+            var z = Math.floor(Math.random() * 256);
+            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+            //randomizes rgb values and adds them together to form a color
+            console.log(bgColor);
+
+            document.body.style.background = bgColor;
+        }
+
+        random_bg_color(); //runs the function
+    }
 
 })();
