@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+var age= prompt ("What is your age?");
+var gender= prompt ("What is your gender?");
+var town = prompt("In what town do you live?");
+
+var isAgt= confirm("is age: "+age+"gender: "+"town: "+town+" correct?");
+
+if (isAgt===true){
+    alert("Thank you for your confirmation");
+}
+
+else {
+    var age= prompt ("What is your age?");
+    var gender= prompt ("What is your gender?");
+    var town = prompt("In what town do you live?");
+
+    var isAgt= confirm("is age: "+age+"gender: "+"town: "+town+" correct?");
+}
 
 })();
