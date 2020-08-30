@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    var button = document.getElementById("run");
+
+    var inputColor = document.getElementById('color');
+    var button = document.querySelector('button');
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        var color = inputColor.value;
+        document.body.style.background = color;
+
+    });
 
 })();
+
+
