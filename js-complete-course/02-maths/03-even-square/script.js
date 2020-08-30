@@ -13,8 +13,9 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
-
+        for (i = 1; i <= 21; i++) {
+            var result=(i*i)
+            console.log("The square number for "+i+" is "+result);
+        }
     });
-
 })();
