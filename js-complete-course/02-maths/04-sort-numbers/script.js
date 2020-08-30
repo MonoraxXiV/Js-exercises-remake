@@ -9,14 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // to get the value of an input: document.getElementById("element-id").value
+    var numbers = document.getElementById("numbers").value;
+    var NumbersArray= [numbers]
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-        // your code here
-
+            // numberlog is for debugging to see if the issue is in the sort function or getting the array.
+            let numberlog=[2, 4, 14, 10, 90, 23, 16]
+            numberlog.sort(function (a, b) {
+                return a - b
+            });
+        console.log(numberlog);
     });
 
 })();
