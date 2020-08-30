@@ -10,9 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+    var myDate = new Date();
+    var hours = myDate.getHours();
+    var minutes = myDate.getMinutes();
+    var total=hours+minutes;
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
-
+//basically making this into a total number to compare. do not use &&30 or it will say good evening after half hour has passed.
+    if (total > 1730) {
+        document.getElementById("target").innerHTML = "Good evening";
+    }
+    else{
+        document.getElementById("target").innerHTML = "hello";
+    }
 })();
