@@ -11,6 +11,19 @@
 
 (function() {
 
-    // your code here
+
+        var year = document.getElementById("year").value;
+
+        document.getElementById("run").addEventListener("click", function () {
+            //looping through the months
+            for (i = 0; i < 12; i++) {
+                var d = new Date(year, i, 13);
+                if (d.getDay() === 5) {
+
+                    console.log(d.toLocaleString('default', {month: 'long'}));
+                }
+            }
+        })
+
 
 })();
